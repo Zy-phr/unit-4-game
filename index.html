@@ -1,0 +1,103 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rick and Morty RPG</title>
+    <link rel="shortcut icon" type="image/jpg" href="./assets/images/RickandMortyIcon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Audiowide" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+</head>
+<body>
+    
+    <!--header using NavBar from Bootstrap-->
+    <nav class="navbar fixed-top">
+        <div class="container">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12";>
+                <!-- <h1 class="name">Game of Throne</h1>  -->
+                <img id="headerImg" class="img-fluid" src="assets/images/rickAndMortyHeader.png" alt="Rick and Morty">
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12";>
+
+            <div class="character_selection">
+
+                <div class="row">
+
+                    <div class="col-lg-1">
+                    <!--empty space-->
+                    </div>
+                        <!--This will contain the question-->
+                    <div class="col-lg-10">
+                        <div id="blurb_display"></div> 
+                        <p id="prompts">Choose your character and ignite your lightsaber!</p>
+                    </div>
+                    <div class="col-lg-1">
+                    <!--empty space-->
+                    </div>
+                
+                </div>
+
+            </div>
+
+            <div class="battle_display">
+        
+                <div class="row">
+
+                    <div class="col-lg-2">
+                        Left Portal 
+                        <div class="leftPortal_image"><img src="assets/images/leftPortal.png" width="150" height="400"></div>
+                    </div>
+                    <!--This area will contain players character-->
+                    <div class="col-lg-3">
+                        charaacter
+                        <div class="character_display"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        Score
+                        <div class="score_display"></div>
+                    </div>
+                    <!--This area will contain enemy character-->
+                    <div class="col-lg-3">
+                        Enemy
+                        <div class="enemy_display"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        Right Portal
+                        <div class="rightPortal_image"><img src="assets/images/rightPortal.png" width="150" height="400"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    <!--Foooter-->
+    
+    <footer id="mainFooter" class="text-light fixed-bottom">
+
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-xs-12 col-lg-12">
+                    <small>Copyright &copy; 2018 Richard Sanchez</small>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>  
+
+    </body>
+</html>

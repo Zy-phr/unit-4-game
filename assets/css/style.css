@@ -1,0 +1,86 @@
+/*
+=======================================================
+CSS for Game of Thrones Hangman game
+=======================================================
+*/
+
+body {
+    background-color:black;
+    background-image: url(../images/ricksGarageMain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1;
+
+}
+
+/*
+=======================================================
+NavBar 
+=======================================================
+*/
+
+.navbar {
+    padding: 0; 
+    background-color: black;
+    border-bottom: 2px solid #2d6472;
+    text-align: center;
+}
+
+.img-fluid {
+    width: 40%;
+    height: 50px;
+    margin-bottom: 4px;
+    margin-top: 6px;
+}
+
+/*
+=======================================================
+Character Display Box
+=======================================================
+*/
+
+.character_selection {
+    border: 2px solid white;
+    margin-top: 65px;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+}
+
+/*
+=======================================================
+Battle Display Box
+=======================================================
+*/
+
+.battle_display {
+    width: 100%;
+    height: 350px;
+    border: 2px solid white;
+    float: left;
+    text-align: center;
+ 
+    
+    
+}
+
+/*
+=======================================================
+Footer
+=======================================================
+*/
+
+#mainFooter {
+    padding: 10px;
+    background: black;
+    border-top: 2px solid #2d6472;
+}
+
+footer small {
+    margin: 0;
+    color: #666;
+    font-size: 0.7em;
+    padding: 12px 0;
+    text-align: center;
+  
+}
