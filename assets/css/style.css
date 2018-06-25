@@ -40,12 +40,14 @@ Character Display Box
 */
 
 .character_selection {
-    border: 2px solid white;
+    /* border: 2px solid #80f442; */
     margin-top: 65px;
     text-align: center;
     width: 100%;
-    height: 200px;
+    height: 190px;
 }
+
+
 
 #prompts {
     font-size: 24px;
@@ -59,14 +61,21 @@ Character Display Box
   .character {
     display: inline-block;
     height: 115px;
-    margin: 15px 10px;    
+    margin: 10px 10px;    
     }
   .character img {
     position: relative;
     height: 100px;
     width: 100px;
+    border-radius: 50px;
     border: 2px solid #2d6472;
   }
+
+  .character img:hover {
+    background-color: #80f442;
+    transform: scale(1.1);
+  }
+
   .HPdisplay {
     position: relative;
     text-align: center;
@@ -83,15 +92,31 @@ Battle Display Box
 
 .battle_display {
     width: 100%;
-    height: 350px;
-    border: 2px solid white;
+    height: 300px;
+    /* border: 2px solid #80f442; */
     float: left;
     text-align: center;
- 
-    
-    
+    margin-top: 5px;   
 }
 
+#deul {
+    color: #2d6472;
+    font-weight: bold;
+    font-size: 42px;  
+}
+
+.attackButton {
+    background: #2d6472;
+    color: #80f442;
+    border: 1px solid #80f442;
+    border-radius: 20px;
+}
+
+.attackButton:hover {
+    background: #80f442;
+    color: #2d6472;
+    transform: scale(1.1);
+}
 /*
 =======================================================
 Footer
@@ -106,7 +131,7 @@ Footer
 
 footer small {
     margin: 0;
-    color: #666;
+    color:#2d6472;
     font-size: 0.7em;
     padding: 12px 0;
     text-align: center;
