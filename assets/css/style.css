@@ -22,7 +22,7 @@ NavBar
 .navbar {
     padding: 0; 
     background-color: black;
-    border-bottom: 2px solid #2d6472;
+    border-bottom: 2px solid #33bfcc;
     text-align: center;
 }
 
@@ -68,7 +68,7 @@ Character Display Box
     height: 100px;
     width: 100px;
     border-radius: 50px;
-    border: 2px solid #2d6472;
+    border: 2px solid #33bfcc;
   }
 
   .character img:hover {
@@ -100,13 +100,13 @@ Battle Display Box
 }
 
 #deul {
-    color: #2d6472;
+    color: #7af98f;
     font-weight: bold;
     font-size: 42px;  
 }
 
 .attackButton {
-    background: #2d6472;
+    background: #33bfcc;
     color: #80f442;
     border: 1px solid #80f442;
     border-radius: 20px;
@@ -114,7 +114,7 @@ Battle Display Box
 
 .attackButton:hover {
     background: #80f442;
-    color: #2d6472;
+    color: #33bfcc;
     transform: scale(1.1);
 }
 /*
@@ -126,12 +126,12 @@ Footer
 #mainFooter {
     padding: 10px;
     background: black;
-    border-top: 2px solid #2d6472;
+    border-top: 2px solid #33bfcc;
 }
 
 footer small {
     margin: 0;
-    color:#2d6472;
+    color: #33bfcc;
     font-size: 0.7em;
     padding: 12px 0;
     text-align: center;
