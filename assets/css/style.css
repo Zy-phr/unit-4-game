@@ -105,7 +105,7 @@ Battle Display Box
 }
 
 #deul {
-    color: #7af98f;
+    color: #33bfcc; 
     font-weight: bold;
     font-size: 42px;  
 }
@@ -113,7 +113,7 @@ Battle Display Box
 .scoreLog {
      border: 2px solid #80f442;
      width: 100%;
-     height: 100px;
+     height: 175px;
      text-align: center;
 }
 
@@ -130,6 +130,13 @@ Battle Display Box
     color: #33bfcc;
     transform: scale(1.1);
 }
+
+#enemy_display {
+    width: 100%;
+    height: 325px;
+    color:#80f442;
+}
+
 /*
 =======================================================
 Footer
