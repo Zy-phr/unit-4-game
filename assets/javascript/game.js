@@ -104,4 +104,9 @@ var BethSmithDiv = $("#BethSmith");
 var JerrySmithDiv = $("#JerrySmith");
 var MrPoopyButtholeDiv = $("#MrPoopyButthole");
 
+/*
+=======================================================
+Character Selection on.cllick task assignments 
+=======================================================
+*/
     
