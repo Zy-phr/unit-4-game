@@ -47,6 +47,33 @@ Character Display Box
     height: 200px;
 }
 
+#prompts {
+    font-size: 24px;
+    color: #80f442;
+}
+
+#characterOptions {
+    display: inline;
+    width: 100%;
+  }
+  .character {
+    display: inline-block;
+    height: 115px;
+    }
+  .character img {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid #2d6472;
+  }
+  .HPdisplay {
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    color: #80f442;
+  }
+
 /*
 =======================================================
 Battle Display Box
