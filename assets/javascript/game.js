@@ -10,7 +10,7 @@ var RickAndMortyRPG = {
     characterObject: "",
     opponentSelected: "",
     opponentObject: "",
-    opponentsRemain: 3
+    opponentsRemain: 4
 };
   
 var RickSanchez = {
@@ -210,9 +210,69 @@ Opponent Selection on.cllick task assignments
 Fight Stage
 =======================================================
 */
-        RickAndMortyRPG.gameStage = "Fight";
+        RickAndMortyRPG.gameStage = "fight";
     }
 
- 
-//End of function...marks...leave at end//
-}); 
+    console.log(RickAndMortyRPG.gameStage);
+}); //End of function...for Character and Opponent Selection//
+
+/*
+=======================================================
+Message Log
+=======================================================
+*/
+
+// var renderMessage = function(message) {
+//     var gameMesageSet = $("#messageLog");
+//     var newMessage = $("<div>").text(message);
+//     gameMesageSet.append(newMessage);
+
+//     if (message == 'clearMessage') {
+//       gameMesageSet.text('');
+//     }
+// };
+
+
+/*
+=======================================================
+Attack Phase function enabling action between objects
+=======================================================
+*/
+
+$(".attackButton").on("click", function() {
+    if (RickAndMortyRPG.gameStage == "fight") {
+        RickAndMortyRPG.opponentObject.healthUpdate(RickAndMortyRPG.characterObject.attack);
+        RickAndMortyRPG.characterObject.attackUpdate();
+        // var attackMessage = "You attacked" + opponentSelected.name + "for" + (characterSelected.attack * turnCounter) + "damage.";
+        // renderMessage("clearMessage");
+        // opponentSelected.health = opponentSelected.health - (characterSelected.attack * turnCounter);
+
+        if ((RickAndMortyRPG.opponentObject.health <= 0) && (RickAndMortyRPG.opponentsRemain == 0)) {
+            // var counterAttackMessage = opponentSelected.name + "attacked you back for" + opponentSelected.enemyAttackBack + "damage.";
+            // renderMessage(attackMessage);
+            // renderMessage(counterAttackMessage);
+            $("#messageLog").text("*URP* H-Hold it! *URP* I did it! *URP* I won!");
+            $("#" + RickAndMortyRPG.opponentSelected).remove();
+            RickAndMortyRPG.gameStage = "gameOver";
+        }else if ((RickAndMortyRPG.opponentObject.health <= 0) && (RickAndMortyRPG.opponentsRemain >= 1)) {
+            $("#messageLog").text("Choose another Opponent!");
+            $("#" + RickAndMortyRPG.opponentSelected).remove();
+            RickAndMortyRPG.gameStage = "opponents";
+            RickAndMortyRPG.opponentsRemain--;
+        }
+
+        if (RickAndMortyRPG.gameStage == "fight") {
+            RickAndMortyRPG.characterObject.healthUpdate(RickAndMortyRPG.opponentObject.counterattack);
+
+            if (RickAndMortyRPG.characterObject.health <= 0) {
+                $("#messageLog").text("*URP* Wait, wait stop! *URP* ok ok! *URP* I give!");
+                RickAndMortyRPG.gameStage = "gameOver";
+            }
+        }
+
+    }
+
+});//End of function...for Attack Phase//
+
+
+
