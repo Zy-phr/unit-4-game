@@ -54,10 +54,12 @@ Character Display Box
 
 #characterOptions {
     display: inline;
+   
   }
   .character {
     display: inline-block;
     height: 115px;
+    margin: 15px 10px;    
     }
   .character img {
     position: relative;
@@ -70,6 +72,7 @@ Character Display Box
     text-align: center;
     font-size: 14px;
     color: #80f442;
+    margin-top: 5px;
   }
 
 /*
