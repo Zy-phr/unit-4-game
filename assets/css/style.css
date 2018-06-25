@@ -59,14 +59,15 @@ Character Display Box
   .character {
     display: inline-block;
     height: 115px;
-    margin: 10px 10px;    
+    margin: 0px 10px;    
     }
   .character img {
     position: relative;
-    height: 100px;
     width: 100px;
     border-radius: 50px;
     border: 2px solid #33bfcc;
+    margin-top: 12px;
+    margin-bottom: 8px;
   }
 
   .character img:hover {
@@ -95,6 +96,12 @@ Battle Display Box
     float: left;
     text-align: center;
     margin-top: 5px;   
+}
+
+#character_display {
+    width: 100%;
+    height: 325px;
+    color:#80f442;
 }
 
 #deul {

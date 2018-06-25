@@ -109,4 +109,25 @@ var MrPoopyButtholeDiv = $("#MrPoopyButthole");
 Character Selection on.cllick task assignments 
 =======================================================
 */
-    
+
+$(".character").on("click", function() {
+    if (RickAndMortyRPG.gameStage == "initial") {
+
+        RickAndMortyRPG.characterSelected = $(this).attr("id");
+        $("id" + RickAndMortyRPG.characterSelected).remove();
+        $("#prompts").text("Choose your Opponent!");
+
+        console.log(RickAndMortyRPG.characterSelected);
+
+        if (RickAndMortyRPG.characterSelected == "RickSanchez") {
+            RickAndMortyRPG.characterObject = RickSanchez;
+            $("#character_display").append(RickSanchezDiv);
+            $("#RickSanchez").html('<p>Rick Sanchez</p> <img src="assets/images/rick.png" border-radius="none" border="none"> <p id="RickSanchezHP">200 HP</p>');
+        }
+
+
+    }
+
+ 
+//End of function...marks...leave at end//
+}); 
