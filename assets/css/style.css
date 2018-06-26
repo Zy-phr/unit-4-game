@@ -67,11 +67,13 @@ Character Display Box
     border: 2px solid #33bfcc;
     margin-top: 12px;
     margin-bottom: 8px;
+    /* background-color: #80f442; */
 }
 
 .character img:hover {
     background-color: #80f442;
     transform: scale(1.1);
+    /* border-color: #80f442; */
 }
 
 .HPdisplay {

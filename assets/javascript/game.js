@@ -69,14 +69,14 @@ var Hemorrhage = {
     }
 };
 
-var PrinceNebulon = {
+var PickleRick = {
     health: 2200,
     attack: Math.floor(Math.random()* 100) + 1,
     counterattack: Math.floor(Math.random()* 50) + 1,
-    imageUrl: "assets/images/playablePrinceNebulon.png",
+    imageUrl: "assets/images/playablePickleRick.png",
     healthUpdate: function(attackDamage) {
       this.health -= attackDamage;
-      $("#PrinceNebulonHP").text(this.health);
+      $("#PickleRickHP").text(this.health);
     },
     attackUpdate: function() {
       this.attack *= 1;
@@ -144,7 +144,7 @@ var RickSanchezDiv = $("#RickSanchez");
 var MortySmithDiv = $("#MortySmith");
 var SummerSmithDiv = $("#SummerSmith");
 var HemorrhageDiv = $("#Hemorrhage");
-var PrinceNebulonDiv = $("#PrinceNebulon");
+var PickleRickDiv = $("#PickleRick");
 var BirdpersonDiv = $("#Birdperson");
 var KrombopulosMichaelDiv = $("#KrombopulosMichael");
 var PrinceNebulonDiv = $("#PrinceNebulon");
@@ -192,7 +192,7 @@ $(".character").on("click", function() {
         if (RickAndMortyRPG.characterSelected == "PickleRick") {
             RickAndMortyRPG.characterObject = PickleRick;
             $("#character_display").append(PickleRickDiv);
-            $("#PickleRick").html('<p>Pickle Rick</p> <img src="assets/images/playablePickleRick.png" height="275"> <p id="PickleRick">2200 HP</p>');
+            $("#PickleRick").html('<p>Pickle Rick</p> <img src="assets/images/playablePickleRick.png" height="275"> <p id="PickleRickHP">2200 HP</p>');
         }
 
         if (RickAndMortyRPG.characterSelected == "Birdperson") {
@@ -260,7 +260,7 @@ Opponent Selection on.cllick task assignments
         if (RickAndMortyRPG.opponentSelected == "PickleRick") {
             RickAndMortyRPG.opponentObject = PickleRick;
             $("#enemy_display").append(PickleRickDiv);
-            $("#PickleRick").html('<p>Pickle Rick</p> <img src="assets/images/playablePickleRick.png" height="275"> <p id="PickleRick">2200 HP</p>');
+            $("#PickleRick").html('<p>Pickle Rick</p> <img src="assets/images/playablePickleRick.png" height="275"> <p id="PickleRickHP">2200 HP</p>');
         }
 
         if (RickAndMortyRPG.opponentSelected == "Birdperson") {
