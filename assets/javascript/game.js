@@ -150,6 +150,10 @@ var KrombopulosMichaelDiv = $("#KrombopulosMichael");
 var PrinceNebulonDiv = $("#PrinceNebulon");
 var ScaryTerryDiv = $("#ScaryTerry");
 
+var portal = new Audio('assets/sounds/Rick and Morty Portal Gun Sound Effect.mp3');
+var wrecked = new Audio('assets/sounds/rick_quote_recked.mp3');
+var theme = new Audio('assets/sounds/rick and morty theme.mp3');
+
 /*
 =======================================================
 Character Selection on.cllick task assignments 
@@ -162,13 +166,13 @@ $(".character").on("click", function() {
         RickAndMortyRPG.characterSelected = $(this).attr("id");
         $("id" + RickAndMortyRPG.characterSelected).remove();
         $("#prompts").text("Choose your Opponent!");
-
+       
         console.log(RickAndMortyRPG.characterSelected);
 
         if (RickAndMortyRPG.characterSelected == "RickSanchez") {
             RickAndMortyRPG.characterObject = RickSanchez;
             $("#character_display").append(RickSanchezDiv);
-            $("#RickSanchez").html('<p>Rick</p> <img src="assets/images/playableRick.png" height="275"> <p id="RickSanchezHP">2000 HP</p>');
+            $("#RickSanchez").html('<p>Rick</p> <img src="assets/images/playableRick.png" height="275"> <p id="RickSanchezHP">2000 HP</p>');  
         }
 
         if (RickAndMortyRPG.characterSelected == "MortySmith") {
