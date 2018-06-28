@@ -161,10 +161,12 @@ Character Selection on.cllick task assignments
 */
 
 $(".character").on("click", function() {
-    if (RickAndMortyRPG.gameStage == "initial") {
+    portal.play();
 
+    if (RickAndMortyRPG.gameStage == "initial") {
         RickAndMortyRPG.characterSelected = $(this).attr("id");
         $("id" + RickAndMortyRPG.characterSelected).remove();
+
         $("#prompts").text("Choose your Opponent!");
        
         console.log(RickAndMortyRPG.characterSelected);
@@ -315,6 +317,7 @@ var renderMessage = function(message) {
   };
 
 $(".attackButton").on("click", function() {
+
     if (RickAndMortyRPG.gameStage == "fight") {
         // var attackMessage = "You attacked" + opponentSelected.name + "for" + (characterSelected.attack) + "damage";
         // renderMessage("clearMessage");
