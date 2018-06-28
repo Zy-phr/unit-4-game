@@ -153,6 +153,7 @@ var ScaryTerryDiv = $("#ScaryTerry");
 var portal = new Audio('assets/sounds/Rick and Morty Portal Gun Sound Effect.mp3');
 var wrecked = new Audio('assets/sounds/rick_quote_recked.mp3');
 var theme = new Audio('assets/sounds/rick and morty theme.mp3');
+var attack = new Audio('assets/sounds/laser.mp3');
 
 /*
 =======================================================
@@ -317,6 +318,7 @@ var renderMessage = function(message) {
   };
 
 $(".attackButton").on("click", function() {
+    attack.play();
 
     if (RickAndMortyRPG.gameStage == "fight") {
         // var attackMessage = "You attacked" + opponentSelected.name + "for" + (characterSelected.attack) + "damage";
