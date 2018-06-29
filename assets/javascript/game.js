@@ -170,7 +170,7 @@ Character Selection on.cllick task assignments
 */
 
 $(".character").on("click", function() {
-    // portal.play();
+    portal.play();
 
     if (RickAndMortyRPG.gameStage == "initial") {
         RickAndMortyRPG.characterSelected = $(this).attr("id");
@@ -183,6 +183,7 @@ $(".character").on("click", function() {
         if (RickAndMortyRPG.characterSelected == "RickSanchez") {
             rick.play();
             RickAndMortyRPG.characterObject = RickSanchez;
+            $(".leftPortal_image").html('<img src="assets/images/leftPortal.png" width="150" height="325">');
             $("#character_display").append(RickSanchezDiv);
             $("#RickSanchez").html('<p>Rick</p> <img src="assets/images/playableRick.png" height="275"> <p id="RickSanchezHP">2000 HP</p>');  
         }
@@ -190,6 +191,7 @@ $(".character").on("click", function() {
         if (RickAndMortyRPG.characterSelected == "MortySmith") {
             mort.play();
             RickAndMortyRPG.characterObject = MortySmith;
+            $(".leftPortal_image").html('<img src="assets/images/leftPortal.png" width="150" height="325">');
             $("#character_display").append(MortySmithDiv);
             $("#MortySmith").html('<p>Morty</p> <img src="assets/images/playableMorty.png" height="275"> <p id="MortySmithHP">1825 HP</p>');
         }
@@ -197,6 +199,7 @@ $(".character").on("click", function() {
         if (RickAndMortyRPG.characterSelected == "SummerSmith") {
             summ.play();
             RickAndMortyRPG.characterObject = SummerSmith;
+            $(".leftPortal_image").html('<img src="assets/images/leftPortal.png" width="150" height="325">');
             $("#character_display").append(SummerSmithDiv);
             $("#SummerSmith").html('<p>Summer</p> <img src="assets/images/playableSummer.png" height="275"> <p id="SummerSmithHP">1750 HP</p>');
         }
@@ -204,6 +207,7 @@ $(".character").on("click", function() {
         if (RickAndMortyRPG.characterSelected == "Hemorrhage") {
             hemor.play();
             RickAndMortyRPG.characterObject = Hemorrhage;
+            $(".leftPortal_image").html('<img src="assets/images/leftPortal.png" width="150" height="325">');
             $("#character_display").append(HemorrhageDiv);
             $("#Hemorrhage").html('<p>Hemorrhage</p> <img src="assets/images/playableHemorrhage.png" height="275"> <p id="HemorrhageHP">1775 HP</p>');
         }
@@ -211,6 +215,7 @@ $(".character").on("click", function() {
         if (RickAndMortyRPG.characterSelected == "PickleRick") {
             pickle.play();
             RickAndMortyRPG.characterObject = PickleRick;
+            $(".leftPortal_image").html('<img src="assets/images/leftPortal.png" width="150" height="325">');
             $("#character_display").append(PickleRickDiv);
             $("#PickleRick").html('<p>Pickle Rick</p> <img src="assets/images/playablePickleRick.png" height="275"> <p id="PickleRickHP">2200 HP</p>');
         }
@@ -218,6 +223,7 @@ $(".character").on("click", function() {
         if (RickAndMortyRPG.characterSelected == "Birdperson") {
             phoenix.play();
             RickAndMortyRPG.characterObject = Birdperson;
+            $(".leftPortal_image").html('<img src="assets/images/leftPortal.png" width="150" height="325">');
             $("#character_display").append(BirdpersonDiv);
             $("#Birdperson").html('<p>Birdperson</p> <img src="assets/images/playableBirdperson.png" height="275"> <p id="BirdpersonHP">1875 HP</p>');
         }
@@ -225,6 +231,7 @@ $(".character").on("click", function() {
         if (RickAndMortyRPG.characterSelected == "KrombopulosMichael") {
             km.play();
             RickAndMortyRPG.characterObject = KrombopulosMichael;
+            $(".leftPortal_image").html('<img src="assets/images/leftPortal.png" width="150" height="325">');
             $("#character_display").append(KrombopulosMichaelDiv);
             $("#KrombopulosMichael").html('<p>Krombopulos Michael</p> <img src="assets/images/playableKrombopulosMichael.png" height="275"> <p id="KrombopulosMichaelHP">1900 HP</p>');
         }
@@ -232,6 +239,7 @@ $(".character").on("click", function() {
         if (RickAndMortyRPG.characterSelected == "PrinceNebulon") {
             prince.play();
             RickAndMortyRPG.characterObject = PrinceNebulon;
+            $(".leftPortal_image").html('<img src="assets/images/leftPortal.png" width="150" height="325">');
             $("#character_display").append(PrinceNebulonDiv);
             $("#PrinceNebulon").html('<p>Prince Nebulon</p> <img src="assets/images/playablePrinceNebulon.png" height="275"> <p id="PrinceNebulonHP">1975 HP</p>');
         }
@@ -239,6 +247,7 @@ $(".character").on("click", function() {
         if (RickAndMortyRPG.characterSelected == "ScaryTerry") {
             terry.play();
             RickAndMortyRPG.characterObject = ScaryTerry;
+            $(".leftPortal_image").html('<img src="assets/images/leftPortal.png" width="150" height="325">');
             $("#character_display").append(ScaryTerryDiv);
             $("#ScaryTerry").html('<p>Scary Terry</p> <img src="assets/images/playableScaryTerry.png" height="275"> <p id="ScaryTerryHP">1850 HP</p>');
         }
@@ -260,6 +269,7 @@ Opponent Selection on.cllick task assignments
         if (RickAndMortyRPG.opponentSelected == "RickSanchez") {
             rick.play();
             RickAndMortyRPG.opponentObject = RickSanchez;
+            $(".rightPortal_image").html('<img src="assets/images/rightPortal.png" width="150" height="325">');
             $("#enemy_display").append(RickSanchezDiv);
             $("#RickSanchez").html('<p>Rick</p> <img src="assets/images/playableRick.png" height="275"> <p id="RickSanchezHP">2000 HP</p>');
         }
@@ -267,6 +277,7 @@ Opponent Selection on.cllick task assignments
         if (RickAndMortyRPG.opponentSelected == "MortySmith") {
             mort.play();
             RickAndMortyRPG.opponentObject = MortySmith;
+            $(".rightPortal_image").html('<img src="assets/images/rightPortal.png" width="150" height="325">');
             $("#enemy_display").append(MortySmithDiv);
             $("#MortySmith").html('<p>Morty</p> <img src="assets/images/playableMorty.png" height="275"> <p id="MortySmithHP">1825 HP</p>');
         }
@@ -274,6 +285,7 @@ Opponent Selection on.cllick task assignments
         if (RickAndMortyRPG.opponentSelected == "SummerSmith") {
             summ.play();
             RickAndMortyRPG.opponentObject = SummerSmith;
+            $(".rightPortal_image").html('<img src="assets/images/rightPortal.png" width="150" height="325">');
             $("#enemy_display").append(SummerSmithDiv);
             $("#SummerSmith").html('<p>Summer</p> <img src="assets/images/playableSummer.png" height="275"> <p id="SummerSmithHP">1750 HP</p>');
         }
@@ -281,6 +293,7 @@ Opponent Selection on.cllick task assignments
         if (RickAndMortyRPG.opponentSelected == "Hemorrhage") {
             hemor.play();
             RickAndMortyRPG.opponentObject = Hemorrhage;
+            $(".rightPortal_image").html('<img src="assets/images/rightPortal.png" width="150" height="325">');
             $("#enemy_display").append(HemorrhageDiv);
             $("#Hemorrhage").html('<p>Hemorrhage</p> <img src="assets/images/playableHemorrhage.png" height="275"> <p id="HemorrhageHP">1775 HP</p>');
         }
@@ -288,6 +301,7 @@ Opponent Selection on.cllick task assignments
         if (RickAndMortyRPG.opponentSelected == "PickleRick") {
             pickle.play();
             RickAndMortyRPG.opponentObject = PickleRick;
+            $(".rightPortal_image").html('<img src="assets/images/rightPortal.png" width="150" height="325">');
             $("#enemy_display").append(PickleRickDiv);
             $("#PickleRick").html('<p>Pickle Rick</p> <img src="assets/images/playablePickleRick.png" height="275"> <p id="PickleRickHP">2200 HP</p>');
         }
@@ -295,6 +309,7 @@ Opponent Selection on.cllick task assignments
         if (RickAndMortyRPG.opponentSelected == "Birdperson") {
             phoenix.play();
             RickAndMortyRPG.opponentObject = Birdperson;
+            $(".rightPortal_image").html('<img src="assets/images/rightPortal.png" width="150" height="325">');
             $("#enemy_display").append(BirdpersonDiv);
             $("#Birdperson").html('<p>Birdperson</p> <img src="assets/images/playableBirdperson.png" height="275"> <p id="BirdpersonHP">1875 HP</p>');
         }
@@ -302,6 +317,7 @@ Opponent Selection on.cllick task assignments
         if (RickAndMortyRPG.opponentSelected == "KrombopulosMichael") {
             km.play();
             RickAndMortyRPG.opponentObject = KrombopulosMichael;
+            $(".rightPortal_image").html('<img src="assets/images/rightPortal.png" width="150" height="325">');
             $("#enemy_display").append(KrombopulosMichaelDiv);
             $("#KrombopulosMichael").html('<p>Krombopulos Michael</p> <img src="assets/images/playableKrombopulosMichael.png" height="275"> <p id="KrombopulosMichaelHP">1900 HP</p>');
         }
@@ -309,6 +325,7 @@ Opponent Selection on.cllick task assignments
         if (RickAndMortyRPG.opponentSelected == "PrinceNebulon") {
             prince.play();
             RickAndMortyRPG.opponentObject = PrinceNebulon;
+            $(".rightPortal_image").html('<img src="assets/images/rightPortal.png" width="150" height="325">');
             $("#enemy_display").append(PrinceNebulonDiv);
             $("#PrinceNebulon").html('<p>Prince Nebulon</p> <img src="assets/images/playablePrinceNebulon.png" height="275"> <p id="PrinceNebulonHP">1975 HP</p>');
         }
@@ -316,6 +333,7 @@ Opponent Selection on.cllick task assignments
         if (RickAndMortyRPG.opponentSelected == "ScaryTerry") {
             terry.play();
             RickAndMortyRPG.opponentObject = ScaryTerry;
+            $(".rightPortal_image").html('<img src="assets/images/rightPortal.png" width="150" height="325">');
             $("#enemy_display").append(ScaryTerryDiv);
             $("#ScaryTerry").html('<p>Scary Terry</p> <img src="assets/images/playableScaryTerry.png" height="275"> <p id="ScaryTerryHP">1850 HP</p>');
         }

@@ -127,7 +127,7 @@ body #messageLog {
     width: 100%;
     height: 125px;
     text-align: center;
-    color: #33bfcc;
+    color: darkgreen;
     font-size: 22px;
     font-weight: bolder;   
     border: 4px solid #33bfcc;
