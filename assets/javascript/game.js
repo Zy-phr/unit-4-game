@@ -139,7 +139,6 @@ var ScaryTerry = {
     }
 };
 
-
 var RickSanchezDiv = $("#RickSanchez");
 var MortySmithDiv = $("#MortySmith");
 var SummerSmithDiv = $("#SummerSmith");
@@ -151,7 +150,6 @@ var PrinceNebulonDiv = $("#PrinceNebulon");
 var ScaryTerryDiv = $("#ScaryTerry");
 
 var portal = new Audio('assets/sounds/Rick and Morty Portal Gun Sound Effect.mp3');
-var wrecked = new Audio('assets/sounds/rick_quote_recked.mp3');
 var theme = new Audio('assets/sounds/rick and morty theme.mp3');
 var attack = new Audio('assets/sounds/laser.mp3');
 var terry = new Audio("assets/sounds/scary_terry.mp3");
@@ -164,7 +162,6 @@ var summ = new Audio('assets/sounds/Keep_Summer_Safe.mp3');
 var km = new Audio('assets/sounds/KMvoice.mp3');
 var mort = new Audio('assets/sounds/oh_man.mp3');
 var rick = new Audio('assets/sounds/ricky_ticky_tabby_biatch.mp3');
-
 
 /*
 =======================================================
@@ -346,11 +343,9 @@ var renderMessage = function(message) {
     }
   };
 
-
 var beam = new Audio('assets/sounds/laser_message.mp3');
-var goodJob = new Audio('assets/sounds/Good_Job!.mp3');
-var doingOk = new Audio('assets/sounds/hey_ya_you_doing_ok_.mp3');
-var showMe = new Audio('assets/sounds/Show_me_what_you_got!.mp3');
+var goodJob = new Audio('assets/sounds/congrats_you_did_it.mp3');
+var wrecked = new Audio('assets/sounds/rick_quote_recked.mp3');
 
 $(".attackButton").on("click", function() {
     beam.play();
@@ -362,8 +357,6 @@ $(".attackButton").on("click", function() {
         RickAndMortyRPG.characterObject.attackUpdate();
         // attackMessage.text("You attacked" + opponentSelected.name + "for" + (characterSelected.attack) + "damage");
         
-        
-    
         if ((RickAndMortyRPG.opponentObject.health <= 0) && (RickAndMortyRPG.opponentsRemain >= 1)) {
             goodJob.play();
             $("#messageLog").text("*URP* Hold it! *URP* You won!");
@@ -385,7 +378,7 @@ $(".attackButton").on("click", function() {
             RickAndMortyRPG.characterObject.healthUpdate(RickAndMortyRPG.opponentObject.counterattack);
           
             if (RickAndMortyRPG.characterObject.health <= 0) {
-                doingOk.play();
+                wrecked.play();
                 $("#messageLog").text("*URP* Wait, wait stop! *URP* ok ok! *URP* I give! Hit restart!");
                 RickAndMortyRPG.gameStage = "gameOver";
             }
@@ -395,7 +388,8 @@ $(".attackButton").on("click", function() {
 
 });//End of function...for Attack Phase//
 
-$("body").on("click", ".restartButton",function(){	
+$(".restartButton").on("click", function() {	
     location.reload();
+   
 
 });
