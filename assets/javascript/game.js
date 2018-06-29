@@ -154,6 +154,7 @@ var portal = new Audio('assets/sounds/Rick and Morty Portal Gun Sound Effect.mp3
 var wrecked = new Audio('assets/sounds/rick_quote_recked.mp3');
 var theme = new Audio('assets/sounds/rick and morty theme.mp3');
 var attack = new Audio('assets/sounds/laser.mp3');
+var terry = new Audio("assets/sounds/scary_terry.mp3");
 
 /*
 =======================================================
@@ -221,6 +222,7 @@ $(".character").on("click", function() {
         }
 
         if (RickAndMortyRPG.characterSelected == "ScaryTerry") {
+            terry.play();
             RickAndMortyRPG.characterObject = ScaryTerry;
             $("#character_display").append(ScaryTerryDiv);
             $("#ScaryTerry").html('<p>Scary Terry</p> <img src="assets/images/playableScaryTerry.png" height="275"> <p id="ScaryTerryHP">1850 HP</p>');
@@ -289,6 +291,7 @@ Opponent Selection on.cllick task assignments
         }
 
         if (RickAndMortyRPG.opponentSelected == "ScaryTerry") {
+            terry.play();
             RickAndMortyRPG.opponentObject = ScaryTerry;
             $("#enemy_display").append(ScaryTerryDiv);
             $("#ScaryTerry").html('<p>Scary Terry</p> <img src="assets/images/playableScaryTerry.png" height="275"> <p id="ScaryTerryHP">1850 HP</p>');
@@ -329,13 +332,13 @@ $(".attackButton").on("click", function() {
         
     
         if ((RickAndMortyRPG.opponentObject.health <= 0) && (RickAndMortyRPG.opponentsRemain >= 1)) {
-            $("#messageLog").text("*URP* Hold it! *URP* I did it! *URP* I won!");
+            $("#messageLog").text("*URP* Hold it! *URP* You won!");
             $("#" + RickAndMortyRPG.opponentSelected).remove();
             RickAndMortyRPG.gameStage = "gameOver";
         }
 
         if ((RickAndMortyRPG.opponentObject.health <= 0) && (RickAndMortyRPG.opponentsRemain >= 1)) {
-            $("#messageLog").text("*URP* Hold it! *URP* I did it! *URP* I won!  Choose another Opponent!");
+            $("#messageLog").text("*URP* Hold it! You won!  Choose another Opponent! or hit restart!");
             $("#" + RickAndMortyRPG.opponentSelected).remove();
             RickAndMortyRPG.gameStage = "opponents";
             RickAndMortyRPG.opponentsRemain = 4;
@@ -348,7 +351,7 @@ $(".attackButton").on("click", function() {
             RickAndMortyRPG.characterObject.healthUpdate(RickAndMortyRPG.opponentObject.counterattack);
           
             if (RickAndMortyRPG.characterObject.health <= 0) {
-                $("#messageLog").text("*URP* Wait, wait stop! *URP* ok ok! *URP* I give!");
+                $("#messageLog").text("*URP* Wait, wait stop! *URP* ok ok! *URP* I give! Hit restart!");
                 RickAndMortyRPG.gameStage = "gameOver";
             }
         }
