@@ -157,6 +157,14 @@ var attack = new Audio('assets/sounds/laser.mp3');
 var terry = new Audio("assets/sounds/scary_terry.mp3");
 var pickle = new Audio('assets/sounds/pickle_rick.mp3');
 var bird = new Audio('assets/sounds/In_bird_culture__this_is_considered.mp3');
+var hemor = new Audio('assets/sounds/HemorrhageVoice.mp3');
+var phoenix = new Audio('assets/sounds/PhoenixpersonVoice.mp3');
+var prince = new Audio('assets/sounds/PrinceVoice.mp3');
+var summ = new Audio('assets/sounds/Keep_Summer_Safe.mp3');
+var km = new Audio('assets/sounds/KMvoice.mp3');
+var mort = new Audio('assets/sounds/oh_man.mp3');
+var rick = new Audio('assets/sounds/ricky_ticky_tabby_biatch.mp3');
+
 
 /*
 =======================================================
@@ -176,24 +184,28 @@ $(".character").on("click", function() {
         console.log(RickAndMortyRPG.characterSelected);
 
         if (RickAndMortyRPG.characterSelected == "RickSanchez") {
+            rick.play();
             RickAndMortyRPG.characterObject = RickSanchez;
             $("#character_display").append(RickSanchezDiv);
             $("#RickSanchez").html('<p>Rick</p> <img src="assets/images/playableRick.png" height="275"> <p id="RickSanchezHP">2000 HP</p>');  
         }
 
         if (RickAndMortyRPG.characterSelected == "MortySmith") {
+            mort.play();
             RickAndMortyRPG.characterObject = MortySmith;
             $("#character_display").append(MortySmithDiv);
             $("#MortySmith").html('<p>Morty</p> <img src="assets/images/playableMorty.png" height="275"> <p id="MortySmithHP">1825 HP</p>');
         }
 
         if (RickAndMortyRPG.characterSelected == "SummerSmith") {
+            summ.play();
             RickAndMortyRPG.characterObject = SummerSmith;
             $("#character_display").append(SummerSmithDiv);
             $("#SummerSmith").html('<p>Summer</p> <img src="assets/images/playableSummer.png" height="275"> <p id="SummerSmithHP">1750 HP</p>');
         }
 
         if (RickAndMortyRPG.characterSelected == "Hemorrhage") {
+            hemor.play();
             RickAndMortyRPG.characterObject = Hemorrhage;
             $("#character_display").append(HemorrhageDiv);
             $("#Hemorrhage").html('<p>Hemorrhage</p> <img src="assets/images/playableHemorrhage.png" height="275"> <p id="HemorrhageHP">1775 HP</p>');
@@ -207,19 +219,21 @@ $(".character").on("click", function() {
         }
 
         if (RickAndMortyRPG.characterSelected == "Birdperson") {
-            bird.play();
+            phoenix.play();
             RickAndMortyRPG.characterObject = Birdperson;
             $("#character_display").append(BirdpersonDiv);
             $("#Birdperson").html('<p>Birdperson</p> <img src="assets/images/playableBirdperson.png" height="275"> <p id="BirdpersonHP">1875 HP</p>');
         }
 
         if (RickAndMortyRPG.characterSelected == "KrombopulosMichael") {
+            km.play();
             RickAndMortyRPG.characterObject = KrombopulosMichael;
             $("#character_display").append(KrombopulosMichaelDiv);
             $("#KrombopulosMichael").html('<p>Krombopulos Michael</p> <img src="assets/images/playableKrombopulosMichael.png" height="275"> <p id="KrombopulosMichaelHP">1900 HP</p>');
         }
 
         if (RickAndMortyRPG.characterSelected == "PrinceNebulon") {
+            prince.play();
             RickAndMortyRPG.characterObject = PrinceNebulon;
             $("#character_display").append(PrinceNebulonDiv);
             $("#PrinceNebulon").html('<p>Prince Nebulon</p> <img src="assets/images/playablePrinceNebulon.png" height="275"> <p id="PrinceNebulonHP">1975 HP</p>');
@@ -247,24 +261,28 @@ Opponent Selection on.cllick task assignments
         console.log(RickAndMortyRPG.opponentSelected);
 
         if (RickAndMortyRPG.opponentSelected == "RickSanchez") {
+            rick.play();
             RickAndMortyRPG.opponentObject = RickSanchez;
             $("#enemy_display").append(RickSanchezDiv);
             $("#RickSanchez").html('<p>Rick</p> <img src="assets/images/playableRick.png" height="275"> <p id="RickSanchezHP">2000 HP</p>');
         }
 
         if (RickAndMortyRPG.opponentSelected == "MortySmith") {
+            mort.play();
             RickAndMortyRPG.opponentObject = MortySmith;
             $("#enemy_display").append(MortySmithDiv);
             $("#MortySmith").html('<p>Morty</p> <img src="assets/images/playableMorty.png" height="275"> <p id="MortySmithHP">1825 HP</p>');
         }
 
         if (RickAndMortyRPG.opponentSelected == "SummerSmith") {
+            summ.play();
             RickAndMortyRPG.opponentObject = SummerSmith;
             $("#enemy_display").append(SummerSmithDiv);
             $("#SummerSmith").html('<p>Summer</p> <img src="assets/images/playableSummer.png" height="275"> <p id="SummerSmithHP">1750 HP</p>');
         }
 
         if (RickAndMortyRPG.opponentSelected == "Hemorrhage") {
+            hemor.play();
             RickAndMortyRPG.opponentObject = Hemorrhage;
             $("#enemy_display").append(HemorrhageDiv);
             $("#Hemorrhage").html('<p>Hemorrhage</p> <img src="assets/images/playableHemorrhage.png" height="275"> <p id="HemorrhageHP">1775 HP</p>');
@@ -278,19 +296,21 @@ Opponent Selection on.cllick task assignments
         }
 
         if (RickAndMortyRPG.opponentSelected == "Birdperson") {
-            bird.play();
+            phoenix.play();
             RickAndMortyRPG.opponentObject = Birdperson;
             $("#enemy_display").append(BirdpersonDiv);
             $("#Birdperson").html('<p>Birdperson</p> <img src="assets/images/playableBirdperson.png" height="275"> <p id="BirdpersonHP">1875 HP</p>');
         }
 
         if (RickAndMortyRPG.opponentSelected == "KrombopulosMichael") {
+            km.play();
             RickAndMortyRPG.opponentObject = KrombopulosMichael;
             $("#enemy_display").append(KrombopulosMichaelDiv);
             $("#KrombopulosMichael").html('<p>Krombopulos Michael</p> <img src="assets/images/playableKrombopulosMichael.png" height="275"> <p id="KrombopulosMichaelHP">1900 HP</p>');
         }
 
         if (RickAndMortyRPG.opponentSelected == "PrinceNebulon") {
+            prince.play();
             RickAndMortyRPG.opponentObject = PrinceNebulon;
             $("#enemy_display").append(PrinceNebulonDiv);
             $("#PrinceNebulon").html('<p>Prince Nebulon</p> <img src="assets/images/playablePrinceNebulon.png" height="275"> <p id="PrinceNebulonHP">1975 HP</p>');
@@ -326,25 +346,33 @@ var renderMessage = function(message) {
     }
   };
 
+
+var beam = new Audio('assets/sounds/laser_message.mp3');
+var goodJob = new Audio('assets/sounds/Good_Job!.mp3');
+var doingOk = new Audio('assets/sounds/hey_ya_you_doing_ok_.mp3');
+var showMe = new Audio('assets/sounds/Show_me_what_you_got!.mp3');
+
 $(".attackButton").on("click", function() {
-    attack.play();
+    beam.play();
 
     if (RickAndMortyRPG.gameStage == "fight") {
-        // var attackMessage = "You attacked" + opponentSelected.name + "for" + (characterSelected.attack) + "damage";
-        // renderMessage("clearMessage");
+        
+        renderMessage("clearMessage");
         RickAndMortyRPG.opponentObject.healthUpdate(RickAndMortyRPG.characterObject.attack);
         RickAndMortyRPG.characterObject.attackUpdate();
+        // attackMessage.text("You attacked" + opponentSelected.name + "for" + (characterSelected.attack) + "damage");
         
         
     
         if ((RickAndMortyRPG.opponentObject.health <= 0) && (RickAndMortyRPG.opponentsRemain >= 1)) {
+            goodJob.play();
             $("#messageLog").text("*URP* Hold it! *URP* You won!");
             $("#" + RickAndMortyRPG.opponentSelected).remove();
             RickAndMortyRPG.gameStage = "gameOver";
         }
 
-        if ((RickAndMortyRPG.opponentObject.health <= 0) && (RickAndMortyRPG.opponentsRemain >= 1)) {
-            $("#messageLog").text("*URP* Hold it! You won!  Choose another Opponent! or hit restart!");
+        if ((RickAndMortyRPG.opponentObject.health <= 0) && (RickAndMortyRPG.opponentsRemain >= 1 )) {
+            $("#messageLog").text("You won! Choose another Opponent! or hit restart!");
             $("#" + RickAndMortyRPG.opponentSelected).remove();
             RickAndMortyRPG.gameStage = "opponents";
             RickAndMortyRPG.opponentsRemain = 4;
@@ -357,6 +385,7 @@ $(".attackButton").on("click", function() {
             RickAndMortyRPG.characterObject.healthUpdate(RickAndMortyRPG.opponentObject.counterattack);
           
             if (RickAndMortyRPG.characterObject.health <= 0) {
+                doingOk.play();
                 $("#messageLog").text("*URP* Wait, wait stop! *URP* ok ok! *URP* I give! Hit restart!");
                 RickAndMortyRPG.gameStage = "gameOver";
             }
