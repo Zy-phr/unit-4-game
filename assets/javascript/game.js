@@ -340,6 +340,8 @@ Opponent Selection on.cllick task assignments
 
 
         RickAndMortyRPG.gameStage = "fight";
+        $("#duel").text("Attack!");
+    
     }
 
     console.log(RickAndMortyRPG.gameStage);
@@ -369,6 +371,7 @@ $(".attackButton").on("click", function() {
     beam.play();
 
     if (RickAndMortyRPG.gameStage == "fight") {
+        // $("#duel").text("DUEL!");
         
         renderMessage("clearMessage");
         RickAndMortyRPG.opponentObject.healthUpdate(RickAndMortyRPG.characterObject.attack);
@@ -399,6 +402,7 @@ $(".attackButton").on("click", function() {
                 wrecked.play();
                 $("#messageLog").text("*URP* Wait, wait stop! *URP* ok ok! *URP* I give! Hit restart!");
                 RickAndMortyRPG.gameStage = "gameOver";
+                $("#duel").text("Restart!");
             }
         }
 
