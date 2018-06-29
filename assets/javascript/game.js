@@ -155,6 +155,8 @@ var wrecked = new Audio('assets/sounds/rick_quote_recked.mp3');
 var theme = new Audio('assets/sounds/rick and morty theme.mp3');
 var attack = new Audio('assets/sounds/laser.mp3');
 var terry = new Audio("assets/sounds/scary_terry.mp3");
+var pickle = new Audio('assets/sounds/pickle_rick.mp3');
+var bird = new Audio('assets/sounds/In_bird_culture__this_is_considered.mp3');
 
 /*
 =======================================================
@@ -163,7 +165,7 @@ Character Selection on.cllick task assignments
 */
 
 $(".character").on("click", function() {
-    portal.play();
+    // portal.play();
 
     if (RickAndMortyRPG.gameStage == "initial") {
         RickAndMortyRPG.characterSelected = $(this).attr("id");
@@ -198,12 +200,14 @@ $(".character").on("click", function() {
         }
 
         if (RickAndMortyRPG.characterSelected == "PickleRick") {
+            pickle.play();
             RickAndMortyRPG.characterObject = PickleRick;
             $("#character_display").append(PickleRickDiv);
             $("#PickleRick").html('<p>Pickle Rick</p> <img src="assets/images/playablePickleRick.png" height="275"> <p id="PickleRickHP">2200 HP</p>');
         }
 
         if (RickAndMortyRPG.characterSelected == "Birdperson") {
+            bird.play();
             RickAndMortyRPG.characterObject = Birdperson;
             $("#character_display").append(BirdpersonDiv);
             $("#Birdperson").html('<p>Birdperson</p> <img src="assets/images/playableBirdperson.png" height="275"> <p id="BirdpersonHP">1875 HP</p>');
@@ -267,12 +271,14 @@ Opponent Selection on.cllick task assignments
         }
 
         if (RickAndMortyRPG.opponentSelected == "PickleRick") {
+            pickle.play();
             RickAndMortyRPG.opponentObject = PickleRick;
             $("#enemy_display").append(PickleRickDiv);
             $("#PickleRick").html('<p>Pickle Rick</p> <img src="assets/images/playablePickleRick.png" height="275"> <p id="PickleRickHP">2200 HP</p>');
         }
 
         if (RickAndMortyRPG.opponentSelected == "Birdperson") {
+            bird.play();
             RickAndMortyRPG.opponentObject = Birdperson;
             $("#enemy_display").append(BirdpersonDiv);
             $("#Birdperson").html('<p>Birdperson</p> <img src="assets/images/playableBirdperson.png" height="275"> <p id="BirdpersonHP">1875 HP</p>');
