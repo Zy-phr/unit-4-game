@@ -62,7 +62,7 @@ Character Display Box
     display: inline-block;
     height: 115px;
     margin: 0px 10px;  
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
 }
 
 .character img {

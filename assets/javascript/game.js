@@ -225,7 +225,7 @@ $(".character").on("click", function() {
             RickAndMortyRPG.characterObject = Birdperson;
             $(".leftPortal_image").html('<img src="assets/images/leftPortal.png" width="150" height="325">');
             $("#character_display").append(BirdpersonDiv);
-            $("#Birdperson").html('<p>Birdperson</p> <img src="assets/images/playableBirdperson.png" height="275"> <p id="BirdpersonHP">1875 HP</p>');
+            $("#Birdperson").html('<p>Phoenixperson</p> <img src="assets/images/playableBirdperson.png" height="275"> <p id="BirdpersonHP">1875 HP</p>');
         }
 
         if (RickAndMortyRPG.characterSelected == "KrombopulosMichael") {
@@ -262,7 +262,7 @@ Opponent Selection on.cllick task assignments
     } else if (RickAndMortyRPG.gameStage == "opponents") {
         RickAndMortyRPG.opponentSelected = $(this).attr("id");
         $("#" + RickAndMortyRPG.opponentSelected).remove();
-        $("#prompts").text("The world is full of idiots who don't understand what's important, and they'll tear us apart");
+        $("#prompts").text("The world is full of idiots who don't understand what's important, and they'll tear us apart!");
 
         console.log(RickAndMortyRPG.opponentSelected);
 
@@ -311,7 +311,7 @@ Opponent Selection on.cllick task assignments
             RickAndMortyRPG.opponentObject = Birdperson;
             $(".rightPortal_image").html('<img src="assets/images/rightPortal.png" width="150" height="325">');
             $("#enemy_display").append(BirdpersonDiv);
-            $("#Birdperson").html('<p>Birdperson</p> <img src="assets/images/playableBirdperson.png" height="275"> <p id="BirdpersonHP">1875 HP</p>');
+            $("#Birdperson").html('<p>Phoenixperson</p> <img src="assets/images/playableBirdperson.png" height="275"> <p id="BirdpersonHP">1875 HP</p>');
         }
 
         if (RickAndMortyRPG.opponentSelected == "KrombopulosMichael") {
