@@ -15,8 +15,8 @@ var RickAndMortyRPG = {
 
 var RickSanchez = {
     health: 2000,
-    attack: Math.floor(Math.random()* 100) + 1,
-    counterattack: Math.floor(Math.random()* 50) + 1,
+    attack: Math.floor(Math.random()* 1000) + 1,
+    counterattack: Math.floor(Math.random()* 500) + 1,
     imageUrl: "assets/images/playablerick.png",
     healthUpdate: function(attackDamage) {
         this.health -= attackDamage;
@@ -29,8 +29,8 @@ var RickSanchez = {
 
 var MortySmith = {
     health: 1825,
-    attack: Math.floor(Math.random()* 100) + 1,
-    counterattack: Math.floor(Math.random()* 50) + 1,
+    attack: Math.floor(Math.random()* 1000) + 1,
+    counterattack: Math.floor(Math.random()* 500) + 1,
     imageUrl: "assets/images/playableMorty.png",
     healthUpdate: function(attackDamage) {
         this.health -= attackDamage;
@@ -43,8 +43,8 @@ var MortySmith = {
 
 var SummerSmith = {
     health: 1750,
-    attack: Math.floor(Math.random()* 100) + 1,
-    counterattack: Math.floor(Math.random()* 50) + 1,
+    attack: Math.floor(Math.random()* 1000) + 1,
+    counterattack: Math.floor(Math.random()* 500) + 1,
     imageUrl: "assets/images/playableSummer.png",
     healthUpdate: function(attackDamage) {
         this.health -= attackDamage;
@@ -57,8 +57,8 @@ var SummerSmith = {
 
 var Hemorrhage = {
     health: 1775,
-    attack: Math.floor(Math.random()* 100) + 1,
-    counterattack: Math.floor(Math.random()* 50) + 1,
+    attack: Math.floor(Math.random()* 1000) + 1,
+    counterattack: Math.floor(Math.random()* 500) + 1,
     imageUrl: "assets/images/playableHemorrhage.png",
     healthUpdate: function(attackDamage) {
         this.health -= attackDamage;
@@ -71,8 +71,8 @@ var Hemorrhage = {
 
 var PickleRick = {
     health: 2200,
-    attack: Math.floor(Math.random()* 100) + 1,
-    counterattack: Math.floor(Math.random()* 50) + 1,
+    attack: Math.floor(Math.random()* 1000) + 1,
+    counterattack: Math.floor(Math.random()* 500) + 1,
     imageUrl: "assets/images/playablePickleRick.png",
     healthUpdate: function(attackDamage) {
       this.health -= attackDamage;
@@ -85,8 +85,8 @@ var PickleRick = {
   
 var Birdperson = {
     health: 1875,
-    attack: Math.floor(Math.random()* 100) + 1,
-    counterattack: Math.floor(Math.random()* 50) + 1,
+    attack: Math.floor(Math.random()* 1000) + 1,
+    counterattack: Math.floor(Math.random()* 500) + 1,
     imageUrl: "assets/images/playableBirdperson.png",
     healthUpdate: function(attackDamage) {
       this.health -= attackDamage;
@@ -99,8 +99,8 @@ var Birdperson = {
 
 var KrombopulosMichael = {
     health: 1900,
-    attack: Math.floor(Math.random()* 100) + 1,
-    counterattack: Math.floor(Math.random()* 50) + 1,
+    attack: Math.floor(Math.random()* 1000) + 1,
+    counterattack: Math.floor(Math.random()* 500) + 1,
     imageUrl: "assets/images/playableKrombopulosMichael.png",
     healthUpdate: function(attackDamage) {
         this.health -= attackDamage;
@@ -113,8 +113,8 @@ var KrombopulosMichael = {
 
 var PrinceNebulon = {
     health: 1975,
-    attack: Math.floor(Math.random()* 100) + 1,
-    counterattack: Math.floor(Math.random()* 50) + 1,
+    attack: Math.floor(Math.random()* 1000) + 1,
+    counterattack: Math.floor(Math.random()* 500) + 1,
     imageUrl: "assets/images/playablePrinceNebulon.png",
     healthUpdate: function(attackDamage) {
       this.health -= attackDamage;
@@ -127,8 +127,8 @@ var PrinceNebulon = {
   
 var ScaryTerry = {
     health: 1850,
-    attack: Math.floor(Math.random()* 100) + 1,
-    counterattack: Math.floor(Math.random()* 50) + 1,
+    attack: Math.floor(Math.random()* 1000) + 1,
+    counterattack: Math.floor(Math.random()* 500) + 1,
     imageUrl: "assets/images/playableScaryTerry.png",
     healthUpdate: function(attackDamage) {
       this.health -= attackDamage;
